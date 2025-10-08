@@ -1,0 +1,4 @@
+int32 duration
+---
+string transcript
+bool success
