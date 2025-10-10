@@ -1,0 +1,13 @@
+# Goal
+float64[] joint_positions
+
+---
+
+# Result
+bool success
+string message
+
+---
+
+# Feedback
+float64 progress
