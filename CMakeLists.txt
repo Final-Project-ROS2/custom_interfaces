@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetJointAngles.srv"
   "action/MoveitPose.action"
   "action/SetJointAngles.action"
+  "action/Prompt.action"
   DEPENDENCIES geometry_msgs
 )
 

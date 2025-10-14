@@ -1,0 +1,13 @@
+# Goal
+string prompt
+
+---
+
+# Result
+bool success
+string final_response
+
+---
+
+# Feedback
+string[] tools_called
