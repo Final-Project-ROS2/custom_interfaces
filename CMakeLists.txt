@@ -15,12 +15,12 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetTranscript.srv"
-  "srv/GetCurrentPose.srv"
-  "srv/GetJointAngles.srv"
   "action/MoveitPose.action"
   "action/SetJointAngles.action"
   "action/Prompt.action"
   "action/MoveitRelative.action"
+  "action/GetCurrentPose.action"
+  "action/GetJointAngles.action"
   DEPENDENCIES geometry_msgs
 )
 

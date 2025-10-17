@@ -1,7 +1,9 @@
-# Request (empty)
+# Goal
 ---
-
-# Response
+# Result
 geometry_msgs/Pose pose
 bool success
 string message
+---
+# Feedback
+float32 progress

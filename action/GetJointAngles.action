@@ -1,7 +1,9 @@
-# Request (empty)
+# Goal
 ---
-
-# Response
+# Result
 float64[] joint_positions
 bool success
 string message
+---
+# Feedback
+float32 progress
