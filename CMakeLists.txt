@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetTranscript.srv"
+  "srv/PixelToReal.srv"
   "action/MoveitPose.action"
   "action/SetJointAngles.action"
   "action/Prompt.action"
