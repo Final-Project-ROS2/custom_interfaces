@@ -21,6 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/MoveitRelative.action"
   "action/GetCurrentPose.action"
   "action/GetJointAngles.action"
+  "action/PlanComplexCartesianSteps.action"
   DEPENDENCIES geometry_msgs
 )
 
