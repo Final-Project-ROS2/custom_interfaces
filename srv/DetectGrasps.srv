@@ -1,0 +1,13 @@
+# DetectGrasps.srv
+# Request: Detect grasp poses using bounding boxes from /vision/detect_objects
+# Automatically calls SAM service, gets detections, computes grasps for each
+
+# No input parameters needed (calls /vision/detect_objects internally)
+
+---
+# Response: Grasp detection results
+
+bool success                     # True if grasp detection succeeded
+int32 total_grasps               # Total number of grasps found
+GraspPose[] grasp_poses  # Array of grasp poses for all objects
+string error_message             # Error description if success=false

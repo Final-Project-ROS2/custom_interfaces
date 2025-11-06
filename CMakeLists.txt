@@ -6,9 +6,13 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # find dependencies
+
+# add find packags here and dependencies above
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -16,6 +20,13 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetTranscript.srv"
   "srv/PixelToReal.srv"
+  "srv/ClassifyBBox.srv"
+  "srv/ClassifyAll.srv"
+  "srv/DetectObjects.srv"
+  "srv/DetectGrasps.srv"
+  "srv/DetectGraspBBox.srv"
+  "srv/UnderstandScene.srv"
+
   "action/MoveitPose.action"
   "action/SetJointAngles.action"
   "action/Prompt.action"
@@ -23,7 +34,19 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/GetCurrentPose.action"
   "action/GetJointAngles.action"
   "action/PlanComplexCartesianSteps.action"
+
+  "msg/SAMDetection.msg"
+  "msg/SAMDetections.msg"
+  "msg/CLIPClassification.msg"
+  "msg/GraspPose.msg"
+  "msg/GraspDetections.msg"
+  "msg/SceneRelation.msg"
+  "msg/SceneObject.msg"
+  "msg/SceneUnderstanding.msg"
+  
   DEPENDENCIES geometry_msgs
+  DEPENDENCIES std_msgs
+  DEPENDENCIES sensor_msgs
 )
 
 if(BUILD_TESTING)

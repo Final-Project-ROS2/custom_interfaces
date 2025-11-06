@@ -1,0 +1,12 @@
+# UnderstandScene.srv
+# Request: Analyze spatial relationships from /vision/detect_objects
+# Uses SAM detections + CLIP labels + GraspNet results
+
+# No input parameters needed (calls /vision/detect_objects internally)
+
+---
+# Response: Scene understanding result
+
+bool success                     # True if scene analysis succeeded
+SceneUnderstanding scene         # Complete scene understanding
+string error_message             # Error description if success=false

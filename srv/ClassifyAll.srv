@@ -1,0 +1,13 @@
+# ClassifyAll.srv
+# Request: Classify entire camera image with CLIP
+
+# No input parameters needed (uses current camera frame)
+
+---
+# Response: Classification result
+
+bool success                     # True if classification succeeded
+string top_label                 # Top predicted label
+float32 top_confidence           # Top confidence score [0-1]
+string all_predictions           # JSON string with all predictions (label + confidence)
+string error_message             # Error description if success=false

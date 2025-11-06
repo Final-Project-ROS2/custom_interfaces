@@ -1,0 +1,14 @@
+# DetectGraspBBox.srv
+# Request: Detect grasp pose in specific bounding box region
+
+int32 x1
+int32 y1
+int32 x2
+int32 y2
+
+---
+# Response: Grasp detection result for specified region
+
+bool success                     # True if grasp detection succeeded
+GraspPose grasp_pose             # Single grasp pose for the region
+string error_message             # Error description if success=false
