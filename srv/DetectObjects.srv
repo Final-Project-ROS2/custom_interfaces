@@ -1,0 +1,22 @@
+# DetectObjects.srv
+# Request: Trigger one-shot detection on current camera frame
+# Returns bounding boxes directly in response (no topic publishing)
+
+# No input parameters needed (uses current camera frame)
+
+---
+# Response: Detection results
+
+bool success                     # True if detection succeeded
+int32 total_detections           # Number of objects detected
+
+# Detection results (flat arrays - no nested messages needed)
+string[] object_ids              # Object IDs ["obj_0", "obj_1", ...]
+int32[] bbox_x1                  # Bounding box x1 coordinates
+int32[] bbox_y1                  # Bounding box y1 coordinates
+int32[] bbox_x2                  # Bounding box x2 coordinates
+int32[] bbox_y2                  # Bounding box y2 coordinates
+float32[] confidences            # Detection confidences [0-1]
+float32[] distances_cm           # Distances in cm (-1.0 if unavailable)
+
+string error_message             # Error description if success=false
