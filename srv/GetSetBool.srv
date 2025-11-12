@@ -1,0 +1,9 @@
+# Request
+bool set        # True if you want to set the value, False if you just want to get it
+bool value      # The new value if set == True
+
+---
+# Response
+bool success    # True if operation succeeded
+bool value      # The current (or updated) value
+string message  # Optional message

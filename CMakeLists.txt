@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/DetectGrasps.srv"
   "srv/DetectGraspBBox.srv"
   "srv/UnderstandScene.srv"
+  "srv/GetSetBool.srv"
 
   "action/MoveitPose.action"
   "action/SetJointAngles.action"
