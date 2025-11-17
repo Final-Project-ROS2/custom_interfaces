@@ -1,0 +1,13 @@
+# Request
+---
+# Response
+bool success
+int32 total_detections
+string[] object_ids
+int32[] bbox_x1
+int32[] bbox_y1
+int32[] bbox_x2
+int32[] bbox_y2
+float32[] confidences
+float32[] distances_cm
+string error_message

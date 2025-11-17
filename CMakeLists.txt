@@ -28,6 +28,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/UnderstandScene.srv"
   "srv/GetSetBool.srv"
   "srv/FindObject.srv"
+  "srv/ClassifyBBoxFiltered.srv"
 
   "action/MoveitPose.action"
   "action/SetJointAngles.action"
