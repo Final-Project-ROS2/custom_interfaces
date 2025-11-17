@@ -19,4 +19,13 @@ int32[] bbox_y2                  # Bounding box y2 coordinates
 float32[] confidences            # Detection confidences [0-1]
 float32[] distances_cm           # Distances in cm (-1.0 if unavailable)
 
+# COCO AP-style IoU metrics (frame-to-frame tracking)
+float32[] iou_scores             # IoU with previous frame [0-1] (0.0 if no match)
+bool[] is_stable                 # True if IoU >= 0.5 (COCO AP threshold)
+
+# Aggregate metrics
+float32 average_iou              # Average IoU across all detections
+int32 stable_count               # Number of stable detections (IoU >= 0.5)
+float32 stability_rate           # Percentage of stable detections [0-1]
+
 string error_message             # Error description if success=false
