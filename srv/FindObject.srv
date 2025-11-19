@@ -6,3 +6,4 @@ bool success
 string message
 int32[] bbox
 float32 confidence
+string object_id

@@ -1,0 +1,17 @@
+# custom_interfaces/srv/FindObject.srv
+# Service to find an object by label and return its world coordinates
+
+# Request
+string label        # Object label to search for
+
+---
+
+# Response
+bool success        # True if object was found successfully
+string message      # Status/error message
+string object_id    # Object ID from detection (e.g., "obj_0", "obj_1")
+int32[] bbox        # Bounding box [x1, y1, x2, y2]
+float32 confidence  # Detection confidence [0-1]
+float64 x           # World X coordinate (m)
+float64 y           # World Y coordinate (m)
+float64 z           # World Z coordinate (m)
