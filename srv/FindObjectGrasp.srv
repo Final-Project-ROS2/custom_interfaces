@@ -1,0 +1,12 @@
+# custom_interfaces/srv/FindObjectGrasp.srv
+# Service to find an object grasp pose by label and return the grasp pose
+
+# Request
+string label        # Object label to search for
+
+---
+# Response: Grasp detection result for specified region
+
+bool success                     # True if grasp detection succeeded
+GraspPose grasp_pose             # Single grasp pose for the region
+string error_message             # Error description if success=false

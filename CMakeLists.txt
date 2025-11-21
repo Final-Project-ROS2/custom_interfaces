@@ -30,6 +30,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/FindObject.srv"
   "srv/ClassifyBBoxFiltered.srv"
   "srv/FindObjectReal.srv"
+  "srv/FindObjectGrasp.srv"
 
   "action/MoveitPose.action"
   "action/SetJointAngles.action"
