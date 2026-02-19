@@ -20,6 +20,7 @@ find_package(std_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetTranscript.srv"
   "srv/PixelToReal.srv"
+  "srv/PixelToRealWorld.srv"
   "srv/ClassifyBBox.srv"
   "srv/ClassifyAll.srv"
   "srv/DetectObjects.srv"

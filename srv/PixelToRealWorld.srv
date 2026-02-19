@@ -1,0 +1,9 @@
+# Request
+int32 u     # pixel column (x-coordinate)
+int32 v     # pixel row (y-coordinate)
+
+---
+# Response
+float64 x   # world X coordinate (m)
+float64 y   # world Y coordinate (m)
+float64 z   # world Z coordinate (m)
