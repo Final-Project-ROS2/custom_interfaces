@@ -1,0 +1,10 @@
+# Request
+string label
+int32 k
+---
+# Response
+bool success
+string message
+int32[] bboxes        # Flattened as [x1,y1,x2,y2, x1,y1,x2,y2, ...]
+float32[] confidences # Similarity score for each returned bbox
+int32 total_matches
