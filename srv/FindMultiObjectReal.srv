@@ -1,0 +1,18 @@
+# custom_interfaces/srv/FindMultiObjectReal.srv
+# Service to find multiple objects by label and return their world coordinates
+
+# Request
+string label        # Object label to search for
+int32 k             # Top-k to retrieve
+
+---
+
+# Response
+bool success          # True if object was found successfully
+string message        # Status/error message
+string[] object_ids   # List of Object IDs from detection
+int32[] bbox          # List of Bounding box (Flattened) [x1,y1,x2,y2, x1,y1,x2,y2, ...]
+float32[] confidence  # List of Detection confidence [0-1]
+float64[] x           # List of World X coordinates (m)
+float64[] y           # List of World Y coordinates (m)
+float64[] z           # List of World Z coordinates (m)
