@@ -1,4 +1,4 @@
-# custom_interfaces/srv/FindObject.srv
+# custom_interfaces/srv/FindObjectReal.srv
 # Service to find an object by label and return its world coordinates
 
 # Request
@@ -15,3 +15,4 @@ float32 confidence  # Detection confidence [0-1]
 float64 x           # World X coordinate (m)
 float64 y           # World Y coordinate (m)
 float64 z           # World Z coordinate (m)
+float64 theta       # Angle with respect to z-axis
