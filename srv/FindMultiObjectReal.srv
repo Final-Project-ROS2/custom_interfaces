@@ -16,3 +16,4 @@ float32[] confidence  # List of Detection confidence [0-1]
 float64[] x           # List of World X coordinates (m)
 float64[] y           # List of World Y coordinates (m)
 float64[] z           # List of World Z coordinates (m)
+float64[] theta       # List of theta rotations around Z-axis (radians)
