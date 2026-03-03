@@ -1,0 +1,15 @@
+# Service to find object angle using OBB (Oriented Bounding Box) for a given bounding box
+# Request
+int32 x1  # Top-left x coordinate in pixels
+int32 y1  # Top-left y coordinate in pixels
+int32 x2  # Bottom-right x coordinate in pixels
+int32 y2  # Bottom-right y coordinate in pixels
+---
+# Response
+bool success
+string message
+float32 u        # Center x coordinate in pixels
+float32 v        # Center y coordinate in pixels
+float32 theta    # Rotation angle in radians (-pi/2 to pi/2)
+float32 width    # OBB width
+float32 height   # OBB height

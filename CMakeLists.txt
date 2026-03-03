@@ -33,6 +33,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/FindObjectReal.srv"
   "srv/FindObjectGrasp.srv"
   "srv/FindBoundary.srv"
+  "srv/FindObjectAngleBB.srv"
+  "srv/FindObjectAngle.srv"
 
   "action/MoveitPose.action"
   "action/SetJointAngles.action"

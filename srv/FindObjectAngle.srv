@@ -1,0 +1,15 @@
+# Service to find angles for all objects in the scene using OBB (Oriented Bounding Box)
+# Request
+# (no input parameters - processes all detected objects)
+---
+# Response
+bool success
+string message
+int32 total_objects                  # Total number of objects detected
+string[] object_ids                  # List of object IDs
+float32[] centers_u                  # Center x coordinates in pixels for each object
+float32[] centers_v                  # Center y coordinates in pixels for each object
+float32[] thetas                     # Rotation angles in radians for each object
+float32[] widths                     # OBB widths for each object
+float32[] heights                    # OBB heights for each object
+int32[] bboxes                       # Flattened bounding boxes [x1,y1,x2,y2,x1,y1,x2,y2,...]
