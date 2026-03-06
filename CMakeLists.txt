@@ -46,6 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/GetCurrentPose.action"
   "action/GetJointAngles.action"
   "action/PlanComplexCartesianSteps.action"
+  "action/PlanPoseTheta.action"
 
   "msg/SAMDetection.msg"
   "msg/SAMDetections.msg"
@@ -55,6 +56,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SceneRelation.msg"
   "msg/SceneObject.msg"
   "msg/SceneUnderstanding.msg"
+  "msg/PoseTheta.msg"
   
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
