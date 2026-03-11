@@ -1,0 +1,13 @@
+# custom_interfaces/srv/FindMultiObjectGrasp.srv
+# Service to find multiple object grasp poses by label and return the grasp poses
+
+# Request
+string label        # Object label to search for
+int32 k             # Top-k to retrieve
+
+---
+# Response: Grasp detection result for specified region
+
+bool success                     # True if grasp detection succeeded
+GraspPose[] grasp_poses          # List of grasp poses
+string error_message             # Error description if success=false
