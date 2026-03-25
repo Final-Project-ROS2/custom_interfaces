@@ -1,0 +1,14 @@
+# Goal
+string prompt
+string scene_desc
+
+---
+
+# Result
+bool success
+string final_response
+
+---
+
+# Feedback
+string[] tools_called
