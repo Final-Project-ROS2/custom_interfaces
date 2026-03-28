@@ -43,6 +43,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/SetJointAngles.action"
   "action/Prompt.action"
   "action/PromptScene.action"
+  "action/PromptSceneToken.action"
   "action/MoveitRelative.action"
   "action/GetCurrentPose.action"
   "action/GetJointAngles.action"
